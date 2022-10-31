@@ -31,6 +31,24 @@ No haremos el corte que nos marca el test de tukey ya que nos quitaria datos que
 
 ![histograma_anio](https://user-images.githubusercontent.com/111570446/199103482-7dc2cc09-320b-4284-8171-a7c9254e1f73.png)
 
+Aprovechamos este momento para reorganizar las columnas y pasamos a limpiar las columnas relacionadas con la lozalizacion de los ataques: 'country', 'location' y 'area'.
+
+Para la columna de 'location', todos los datos que tengamos como 'desconocido' lo sobrescribimos con los datos de 'area'. 
+
+Para la columna de fatal_Y_N vamos a seguir el mismo procedimiento que con las anteriores, en este caso, con la columna 'injury'. Si en esta, aparece la palabra "fatal", pondremos una "Y" en la columna, si no, lo dejaremos en "N". Con una revision mas exahustiva de la columna 'injury' se podría precisar mejor.
+Estos serían los resultados actuales en cuanto al resultado de los ataques:
+
+![ataques_mortales](https://user-images.githubusercontent.com/111570446/199106377-b6208d1e-028d-4114-b531-b046740a5391.png)
+
+No olvidemos que esto es una aproximación, ya que en este punto, los datos no eran suficiente precisos.
 
 
+Ahora vamos a limpiar la columna de genero, 'sex'. En este caso, para los casos dudosos, ya que no tenemos manera de contrastarlos con otras columnas, los datos que no sean validos, se pondran como 'desconocido'. Aun así, podemos ver una gran diferencia en cuanto al genero de las víctimas:
+
+
+
+![sexo](https://user-images.githubusercontent.com/111570446/199107092-3bfe7761-d00f-42e5-be4f-76967630f34c.png)
+
+
+También se ha limpiado la columna de edades, en esta ocasion, hay una gran cantidad de valores desconocidos, por lo que para sacar algun tipo de estadistica, habria que separar estos datos y tratar los restantes.
 
